@@ -576,6 +576,7 @@ body.menu-open .header .header-logo img:last-child,
 }
 @media(min-width:992px){
 	#h-call-to-action{}
+	#h-call-to-action .col-left .inner,
 	#h-call-to-action .col-right .inner{
 		width:calc(100% - (100vw - 1140px)/2);
 	}
