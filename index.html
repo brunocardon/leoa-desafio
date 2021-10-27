@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="language" content="pt-br" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<link rel="apple-touch-icon" sizes="57x57" href="https://www.leoa.com.br/images/favicon/apple-icon-57x57.png" />
+		<link rel="apple-touch-icon" sizes="60x60" href="https://www.leoa.com.br/images/favicon/apple-icon-60x60.png" />
+		<link rel="apple-touch-icon" sizes="72x72" href="https://www.leoa.com.br/images/favicon/apple-icon-72x72.png" />
+		<link rel="apple-touch-icon" sizes="76x76" href="https://www.leoa.com.br/images/favicon/apple-icon-76x76.png" />
+		<link rel="apple-touch-icon" sizes="114x114" href="https://www.leoa.com.br/images/favicon/apple-icon-114x114.png" />
+		<link rel="apple-touch-icon" sizes="120x120" href="https://www.leoa.com.br/images/favicon/apple-icon-120x120.png" />
+		<link rel="apple-touch-icon" sizes="144x144" href="https://www.leoa.com.br/images/favicon/apple-icon-144x144.png" />
+		<link rel="apple-touch-icon" sizes="152x152" href="https://www.leoa.com.br/images/favicon/apple-icon-152x152.png" />
+		<link rel="apple-touch-icon" sizes="180x180" href="https://www.leoa.com.br/images/favicon/apple-icon-180x180.png" />
+		<link rel="icon" type="image/png" sizes="192x192" href="https://www.leoa.com.br/images/favicon/android-icon-192x192.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="https://www.leoa.com.br/images/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="96x96" href="https://www.leoa.com.br/images/favicon/favicon-96x96.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="https://www.leoa.com.br/images/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="https://www.leoa.com.br/images/favicon/manifest.json">
+		
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta name="msapplication-TileImage" content="https://www.leoa.com.br/images/favicon/ms-icon-144x144.png" />
+		<meta name="theme-color" content="#ffffff" />
+		
+		<title>Desafio Front - Leoa layout</title>
+		
+		<meta name="description" content="A Leoa é uma assistente virtual que guia você na declaração de Imposto de Renda de forma fácil, grátis e possui especialistas prontos para ajudar." />
+		<meta property="og:title" content="Declaração de Imposto de Renda Online | Leoa" />
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.leoa.com.br" />
+		<meta property="og:site_name" content="Leoa" />
+		<meta property="og:description" content="A Leoa é uma assistente virtual que guia você na declaração de Imposto de Renda de forma fácil, grátis e possui especialistas prontos para ajudar." />
+		<meta property="og:image" content="https://www.leoa.com.br/images/leoa.jpg" />
+		<meta property="og:image:secure_url" content="https://www.leoa.com.br/images/leoa.jpg" />
+		<meta property="og:image:type" content="image/jpeg" />
+		<meta property="og:image:width" content="500" />
+		<meta property="og:image:height" content="500" />
+		<meta name="twitter:title" content="Declaração de Imposto de Renda Online | Leoa" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:site" content="https://www.leoa.com.br" />
+		<meta name="twitter:creator" content="@DeclareLeoa" />
+		<meta name="twitter:domain" content="leoa" />
+		<meta name="twitter:description" content="A Leoa é uma assistente virtual que guia você na declaração de Imposto de Renda de forma fácil, grátis e possui especialistas prontos para ajudar." />
+		<meta name="twitter:image:alt" content="Declaração de Imposto de Renda Online | Leoa" />
+		<meta name="twitter:image" content="https://www.leoa.com.br/images/leoa.jpg" />
+			
+		<link id="sprite-svg" rel="prefetch" href="https://www.leoa.com.br/images/site2021/sprite-site-20211018.svg" />
+		<!--[if lt IE 9]>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"> 
+		
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<link href="assets/css/root.css" rel="stylesheet">
+		<link href="assets/css/style.css" rel="stylesheet">
+	</head>
+	<body class="header-transparent">
+		
+		<!-- HEADER -->
+		<header class="header">
+			<div class="container">
+				<div class="header-logo">
+					<a href="/">
+						<img src="assets/img/logo.svg" alt="Logo Leoa">
+						<img src="assets/img/logo-color.svg" alt="Logo Leoa">
+					</a>
+				</div>
+				
+				<button type="button" class="header-hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				
+				<nav id="navbar-desktop" class="header-menu">
+					<ul>
+						<li class="menu-item">
+							<a class="nav-link" href="/">Início</a>
+						</li>
+						<li class="menu-item">
+							<a class="nav-link" href="#" title="Antecipe sua Restituição">Antecipe sua Restituição</a>
+						</li>
+						<li class="menu-item">
+							<a class="nav-link" href="#" title="Sobre nós">Sobre nós</a>
+						</li>
+						<li class="menu-item">
+							<a class="nav-link" href="#" title="Blog">Blog</a>
+						</li>
+						<li class="menu-item">
+							<a class="nav-link" href="#" title="Log in">Log in <i class="fas fa-arrow-right"></i></a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header><!-- .HEADER -->
+		
+		<!-- BANNER -->
+		<div id="h-banner">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-left">
+						<div class="content-text">
+							<h1>A declaração de Imposto de renda de maneira fácil</h1>
+							<p>A próxima declaração é só em Março de 2020, mas a gente já te ajuda a se organizar</p>
+							<a href="#" class="btn btn-green" title="QUERO SER AVISADO">QUERO SER AVISADO</a>
+						</div>
+					</div>
+					<div class="col-lg-7 col-right d-none d-lg-block d-xl-block d-xxl-block">
+						<img src="assets/img/leoa-banner-01.png" class="person" alt="Declaração de Imposto de Renda Online | Leoa - Luciano Szafir" />
+						
+						<div class="testmonial">
+							<div class="rate">
+								<div class="star full">★</div>
+								<div class="star full">★</div>
+								<div class="star full">★</div>
+								<div class="star full">★</div>
+								<div class="star full">★</div>
+							</div>
+							<p>
+								"A Leoa me ajuda a organizar e guardar cada despesa para fazer uma declaração de 
+								imposto de renda completa, aumentando assim o valor da minha restituição."
+							</p>
+							<span>Luciano Szafir</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- .BANNER -->
+		
+		<!-- PASSOS -->
+		<div id="h-passos">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<h2 class="text-center block-title">
+							Gratuito para 100% <br/>
+							dos contribuintes
+						</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-item text-center">
+						<img src="assets/img/leoa-passos-icon-01.png" alt="Crie sua conta no Leoa" class="icon" />
+						
+						<h5>Crie sua conta no Leoa</h5>
+						<p>
+							Faça seu cadastro e comece sua declaração de forma rápida e fácil, 
+							com ajuda da sua assistente virtual, a Leoa.
+						</p>
+					</div>
+					<div class="col-lg-4 col-item text-center">
+						<img src="assets/img/leoa-passos-icon-01.png" alt="Responda as perguntas" class="icon" />
+						
+						<h5>Responda as perguntas</h5>
+						<p>
+							A partir da descrição do seu perfil a Leoa sabe exatamente 
+							o que você precisa responder para criar a sua declaração.
+						</p>
+					</div>
+					<div class="col-lg-4 col-item text-center">
+						<img src="assets/img/leoa-passos-icon-01.png" alt="Pronto" class="icon" />
+						
+						<h5>Pronto</h5>
+						<p>
+							A sua declaração será gerada automaticamente e você 
+							poderá fazer download do recibo ou deixar arquivado.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div><!-- .PASSOS -->
+		
+		<!-- ABAS -->
+		<div id="h-abas">
+			<div class="container">
+				<div class="row lin-title">
+					<div class="col-lg-12 text-center">
+						<h2 class="block-title">Porque você precisa usar?</h2>
+						<p>Entenda as vantagens de usar a Leoa para organizar a sua declaração ao longo do ano</p>
+					</div>
+				</div>
+				
+				<div class="row lin-car">
+					<div class="col-lg-12">
+						<div class="car-nav text-center">
+							<div class="nav-item item-slick current" data-target="0">+ Restituição</div>
+							<div class="nav-item item-slick" data-target="1">- Impostos</div>
+							<div class="nav-item item-slick" data-target="2">+ Fácil e barato</div>
+						</div>
+						
+						<div class="car-content car-content-action">
+							<div class="content-item" id="content-restituicao">
+								<div class="row align-items-center">
+									<div class="col-lg-6 col-left">
+										<div class="inner text-center">
+											<img src="assets/img/leoa-aba-icon-01.png" alt="+ Restituição" class="icon" />
+										</div>
+									</div>
+									<div class="col-lg-6 col-right">
+										<div class="inner">
+											<h3>+ Restituição</h3>
+											<p>
+												Na Leoa você restitui mais Imposto de Renda e além disso você 
+												não precisa esperar o governo te depositar, você pode solicitar a 
+												antecipação da sua restituição através do cartão Leoa que será enviado para você.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-item" id="content-impostos">
+								<div class="row align-items-center">
+									<div class="col-lg-6 col-left">
+										<div class="inner text-center">
+											<img src="assets/img/leoa-aba-icon-02.png" alt="Menos impostos" class="icon" />
+										</div>
+									</div>
+									<div class="col-lg-6 col-right">
+										<div class="inner">
+											<h3>Menos impostos</h3>
+											<p>
+												Sim, na Leoa você paga menos impostos, e ao longo do ano ela te dá dicas 
+												para diminuir seus impostos e/ou aumentar sua restituição.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="content-item" id="content-facil">
+								<div class="row align-items-center">
+									<div class="col-lg-6 col-left">
+										<div class="inner text-center">
+											<img src="assets/img/leoa-aba-icon-03.png" alt="Mais fácil e barato" class="icon" />
+										</div>
+									</div>
+									<div class="col-lg-6 col-right">
+										<div class="inner">
+											<h3>Mais fácil e barato</h3>
+											<p>
+												A declaração de Imposto de Renda não precisa ser tão complicada. 
+												A gente a simplificou e tornou-a intuitiva, você não precisa mais saber 
+												tudo sobre Imposto de Renda para fazer sua declaração, a Leoa faz isso por você.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row lin-itens-mob">
+					<div class="col-lg-12 car-content">
+						<div class="content-item" id="content-restituicao">
+							<div class="row align-items-center">
+								<div class="col-lg-6 col-left">
+									<div class="inner text-center">
+										<img src="assets/img/leoa-aba-icon-01.png" alt="+ Restituição" class="icon" />
+									</div>
+								</div>
+								<div class="col-lg-6 col-right">
+									<div class="inner">
+										<h3>+ Restituição</h3>
+										<p>
+											Na Leoa você restitui mais Imposto de Renda e além disso você 
+											não precisa esperar o governo te depositar, você pode solicitar a 
+											antecipação da sua restituição através do cartão Leoa que será enviado para você.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-item" id="content-impostos">
+							<div class="row align-items-center">
+								<div class="col-lg-6 col-left">
+									<div class="inner text-center">
+										<img src="assets/img/leoa-aba-icon-02.png" alt="Menos impostos" class="icon" />
+									</div>
+								</div>
+								<div class="col-lg-6 col-right">
+									<div class="inner">
+										<h3>Menos impostos</h3>
+										<p>
+											Sim, na Leoa você paga menos impostos, e ao longo do ano ela te dá dicas 
+											para diminuir seus impostos e/ou aumentar sua restituição.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-item" id="content-facil">
+							<div class="row align-items-center">
+								<div class="col-lg-6 col-left">
+									<div class="inner text-center">
+										<img src="assets/img/leoa-aba-icon-03.png" alt="Mais fácil e barato" class="icon" />
+									</div>
+								</div>
+								<div class="col-lg-6 col-right">
+									<div class="inner">
+										<h3>Mais fácil e barato</h3>
+										<p>
+											A declaração de Imposto de Renda não precisa ser tão complicada. 
+											A gente a simplificou e tornou-a intuitiva, você não precisa mais saber 
+											tudo sobre Imposto de Renda para fazer sua declaração, a Leoa faz isso por você.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- .ABAS -->
+
+		<!-- CARTÃO -->
+		<div id="h-cartao">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-5 col-left">
+						<div class="inner">
+							<h2>
+								Receba sua restituição <br/>
+								em menos de 7 dias!
+							</h2>
+							<p>
+								Na Leoa você antecipa sua restituição e recebe o valor no cartão Leoa 
+								sem esperar quase o ano todo até que a Receita Federal te deposite.
+							</p>
+
+							<a href="#" class="link-action" title="Conheça nosso cartão">Conheça nosso cartão<i class="fas fa-arrow-right"></i></a>
+						</div>
+					</div>
+					<div class="col-lg-7 col-right">
+						<div class="inner text-center">
+							<img src="assets/img/leoa-cartao-img-01.png" alt="Cartão" class="card-icon" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- .CARTÃO -->
+
+		<!-- EXPLICAÇÃO -->
+		<div id="h-explicacao">
+			<div class="container">
+				<div class="row lin-title">
+					<div class="col-lg-8 offset-lg-2 text-center">
+						<h2 class="block-title">Como pode ser tao fácil?</h2>
+						<p>
+							Desenvolvemos uma tecnologia que transforma perguntas e termos 
+							difíceis da declaração em um conteúdo simples que pode ser 
+							respondido por qualquer pessoa e te guiamos em todo o processo.
+						</p>
+					</div>
+				</div>
+				
+				<div class="row align-items-center lin-content">
+					<div class="col-lg-7 col-left">
+						<div class="inner text-center">
+							<img src="assets/img/leoa-explicacao-img-01.png" alt="Inteligência Artificial" class="img-icon" />
+						</div>
+					</div>
+					<div class="col-lg-5 col-right">
+						<div class="inner">
+							<h6>Inteligência Artificial</h6>
+							<h3>A Inteligência artificial trabalhando para você</h3>
+							<p>
+								Inteligência artificial já está nos ajudando em diversas áreas da nossa vida, 
+								agora chegou a vez de ela te ajudar na sua declaração de Imposto de Renda.
+							</p>
+							
+							<ul class="list-top">
+								<li>Tão simples quanto falar com seu contador</li>
+								<li>Sua assistente virtual particular</li>
+								<li>Declaração perfeita é aquele que te ajuda a economizar</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row align-items-center lin-content">
+					<div class="col-lg-7 col-left d-lg-none d-xl-none d-xxl-none">
+						<div class="inner text-center">
+							<img src="assets/img/leoa-explicacao-img-02.png" alt="Segurança de Dados" class="img-icon" />
+						</div>
+					</div>
+					<div class="col-lg-5 col-right">
+						<div class="inner">
+							<h6>Segurança de Dados</h6>
+							<h3>Aqui seus dados são levados a sério</h3>
+							<p>
+								Nossa infraestrutura está toda armazenada em nuvem, com criptografia 
+								de dados que proporcionam segurança à sua declaração.
+							</p>
+							
+							<ul class="list-top">
+								<li>Usamos dados para lhe proporcionar a declaração perfeita</li>
+								<li>Suas informações nos ajudam a aumentar sua restituição</li>
+								<li>Coletamos, armazenamos e utilizamos seus dados de maneira segura</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-7 col-left d-none d-lg-block d-xl-block d-xxl-block">
+						<div class="inner text-center">
+							<img src="assets/img/leoa-explicacao-img-02.png" alt="Segurança de Dados" class="img-icon" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- .EXPLICAÇÃO -->
+
+		<!-- APP -->
+		<div id="h-app">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-left">
+						<div class="inner">
+							<h3>
+								Baixe agora o aplicativo Leoa app 
+								para o seu celular 
+							</h3>
+							<p>
+								Controle o seu saldo, transfira os valores pra outras contas, 
+								faça tudo com o aplicativo da sua conta LEOA 
+							</p>
+							<div class="icon-stores">
+								<a href="#" target="_blank" class="icon-link" title="Apple Store" >
+									<img src="assets/img/leoa-link-apple-store.png" alt="Apple Store" />
+								</a>
+								<a href="#" target="_blank" class="icon-link" title="Play Store" >
+									<img src="assets/img/leoa-link-play-store.png" alt="Play Store" />
+								</a>
+							</div>
+							
+							<a href="#" class="link-action" title="Envie um link do APP para meu telefone">Envie um link do APP para meu telefone</a>
+						</div>
+					</div>
+					
+					<div class="col-lg-6 offset-lg-1 col-right text-center d-none d-lg-block d-xl-block d-xxl-block">
+						<div class="inner">
+							<img src="assets/img/leoa-app-icon-img.png" alt="App" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- .APP -->
+
+		<!-- CALL TO ACTION -->
+		<div id="h-call-to-action">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-6 col-left">
+						<div class="inner text-center">
+							<h3>
+								Avise-me quando a próxima <br/>
+								declaração se aproximar
+							</h3>
+							<a href="#" class="btn btn-light" title="RECEBER LEMBRETE!">RECEBER LEMBRETE!</a>
+						</div>
+					</div>
+					<div class="col-lg-6 col-right">
+						<div class="inner text-center">
+							<h3>
+								Ainda não sabe o que fazer <br/>
+								ou por onde começar?
+							</h3>
+							<a href="#" class="btn btn-light btn-outline" title="ENTRE EM CONTATO">ENTRE EM CONTATO</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><!-- .CALL TO ACTION -->
+		
+		
+		
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row lin01">
+					<div class="col-lg-12 text-center">
+						<div class="info">
+							Não encontrou a informação que precisava? 
+							Entre em contato por: <a href="mailto:ajuda@leoa.com.br">ajuda@leoa.com.br</a>
+						</div>
+						<div class="hour">Segunda a sexta das 08:00hs à 18:00hs.</div>
+					</div>
+				</div>
+				
+				<div class="row lin02">
+					<div class="col-lg-6">
+						<div class="inner">
+							<div class="menu-footer">
+								<h5>
+									Sobre
+									<i class="fas fa-chevron-down"></i>
+								</h5>
+								<div class="dtop">
+									<div class="row">
+										<div class="col-lg-6">
+											<ul>
+												<li><a href="#" class="menu-item current" title="A leoa">A leoa</a></li>
+												<li><a href="#" class="menu-item " title="Quem somos">Quem somos</a></li>
+												<li><a href="#" class="menu-item " title="Restituição de IR">Restituição de IR</a></li>
+											</ul>
+										</div>
+										<div class="col-lg-6">
+											<ul>
+												<li><a href="#" class="menu-item " title="Cartão Leoa">Cartão Leoa</a></li>
+												<li><a href="#" class="menu-item " title="Blog">Blog</a></li>
+												<li><a href="#" class="menu-item " title="Contato">Contato</a></li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								
+								<ul class="mob mob-colapsed">
+									<li><a href="#" class="menu-item current" title="A leoa">A leoa</a></li>
+									<li><a href="#" class="menu-item " title="Quem somos">Quem somos</a></li>
+									<li><a href="#" class="menu-item " title="Restituição de IR">Restituição de IR</a></li>
+									<li><a href="#" class="menu-item " title="Cartão Leoa">Cartão Leoa</a></li>
+									<li><a href="#" class="menu-item " title="Blog">Blog</a></li>
+									<li><a href="#" class="menu-item " title="Contato">Contato</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="inner">
+							<div class="menu-footer">
+								<h5>
+									Legal
+									<i class="fas fa-chevron-down"></i>
+								</h5>
+								<ul class="mob-colapsed">
+									<li><a href="#" class="menu-item " title="Termos de uso">Termos de uso</a></li>
+									<li><a href="#" class="menu-item " title="Política de privacidade">Política de privacidade</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="inner">
+							<div class="menu-footer">
+								<h5>
+									Siga-nos
+									<i class="fas fa-chevron-down"></i>
+								</h5>
+								<ul class="mob-colapsed">
+									<li>
+										<a href="#" class="menu-item " title="Instagram">
+											<i class="fab fa-instagram"></i> Instagram
+										</a>
+									</li>
+									<li>
+										<a href="#" class="menu-item " title="Facebook">
+											<i class="fab fa-facebook-f"></i> Facebook
+										</a>
+									</li>
+									<li>
+										<a href="#" class="menu-item " title="Twitter">
+											<i class="fab fa-twitter"></i> Twitter
+										</a>
+									</li>
+									<li>
+										<a href="#" class="menu-item " title="Linkedin">
+											<i class="fab fa-linkedin-in"></i> Linkedin
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row lin03">
+					<div class="col-lg-6 col-left">
+						<div class="inner">
+							<img src="assets/img/leoa-footer-logo.png" alt="Desafio Front - Leoa layout" class="logo-footer" />
+							<span>2018 © Leoa - Todos os direitos reservados.</span>
+						</div>
+					</div>
+					<div class="col-lg-6 col-right">
+						<div class="inner">
+							<a href="#" target="_blank" title="Febacapital">
+								<img src="assets/img/leoa-footer-credit.png" alt="Febacapital" class="logo-footer" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer><!-- .FOOTER -->
+		
+		<!-- SCRIPTS -->
+		<script src="https://kit.fontawesome.com/fdca0923f0.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+		<script src="assets/js/script.js?ver=2" rel="stylesheet"></script>
+	</body>
+</html>
